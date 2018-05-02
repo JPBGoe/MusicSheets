@@ -1,0 +1,281 @@
+\documentclass[a4paper,10pt]{scrartcl}
+
+% Spracheinstellungen
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+% Dokumenteigenschaften
+\title{Anwendungsfallbeschreibungen}
+\author{Jan-Philipp Burchert}
+\date{ }
+
+\begin{document}
+\maketitle
+ 
+\tableofcontents
+\newpage
+
+\section{Musikstück hinzufügen}
+\label{uc musik hinzufuegen}
+\subsection{Zusammenfassung:}
+Der Nutzer legt im System ein Musikstück an, dem Notenblätter für verschiedene Stimmen zugeordnet werden können. Hierbei müssen die Eckdaten des Musikstücks eingegeben werden.
+\subsection{Akteure:} 
+Nutzer, System
+\subsection{Auslöser:} 
+Ein neues Musikstück soll dem System hinzugefügt werden.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}	
+	\item Im Reiter \glqq Musikstücke\grqq wählt der Nutzer die Option \glqq Musikstück hinzufügen\grqq.
+	\item In der darauf erscheinenden Eingabemaske werden die Daten des Musikstücks eingegeben.
+	\item Durch Betätigung des \glqq Bestätigung\grqq - Button, fügt die Software das Musikstück zum Bestand hinzu und erstellt einen Ordner.
+	\item Das System zeigt eine Meldung über die Erfolgreiche Eingabe des Musikstücks, die der Benutzer mit \glqq Ok\grqq bestätigt. \label{Mhzu-Best}
+	\item Die Software schließt die Eingabe und wechselt zum Hauptmenü zurück.
+\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+	\begin{enumerate}
+	\item Sollte das Musikstück bereits vorhanden sein, wird abweichend vom Standardablauf, Punkt \ref{Mhzu-Best} nicht eine Meldung über das Vorhandensein des Musikstücks ausgegeben.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Das Musikstück wurde hinzugefügt.
+\subsection{Ergebnis:}
+In der Tabelle mit den Einträgen der einzelnen Musikstücke wurde ein neuer Eintrag für das hinzugefügte Musikstück angelegt.
+\subsection{Häufigkeit:}
+1 bis 2 Mal pro Jahr
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\section{Musikstück bearbeiten}
+\label{uc musik bearbeiten}
+\subsection{Zusammenfassung:}
+Der Nutzer ändert hinterlegte Informationen zu einem Musikstück. Hierzu sucht er es aus den Musikstücken heraus und kann anschließend die Daten bearbeiten.
+\subsection{Akteure:}
+Nutzer, System
+\subsection{Auslöser:}
+Eine hinterlegte Information zu einem Musikstück muss korrigiert werden.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}
+	\item Im Reiter \glqq Musikstücke\grqq wählt der Nutzer die Option \glqq Musikstück bearbeiten\grqq
+	\item Es erfolgt eine Suche gemäß Anwendungsfall \ref{uc musik suchen}, wobei die Suchmaske bereits offen ist.
+	\item Die Daten des gesuchten Musikstückes werden in einer editierbaren Ansicht angezeigt und der Nutzer kann diese nun verändern. Zusätzlich wird die Anzahl der hinterlegten Notenblätter des Musikstücks angezeigt.\label{musik bearbeiten suche}
+	\item Durch \glqq Ändern\grqq werden die gemachten Änderungen übernommen.
+	\item Die Software kehrt zum Hauptmenü zurück.
+	\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+	\begin{enumerate}
+	\item Wird mehr als ein Musikstück ersucht, so muss erneut gesucht werden
+	\item Durch Abbruch werden die gemachten Änderung in der Maske unwirksam und die Software kehrt zum Hauptmenü zurück.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Die Daten des Musikstücks wurden geändert.
+\subsection{Ergebnis:}
+Das System hat die veränderten Daten gespeichert.
+\subsection{Häufigkeit:}
+1 mal pro Jahr
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\section{Musikstück entfernen}
+\label{uc musik entfernen}
+\subsection{Zusammenfassung:}
+Der Nutzer entfernt ein Musikstück aus dem System. Die dem Musikstück zugehörigen Notenblätter werden gelöscht, d.h. in den Papierkorb verschoben.
+\subsection{Akteure:}
+Nutzer, System
+\subsection{Auslöser:}
+Ein Musikstück wird nicht mehr gebraucht oder ist unbenutzbar geworden, sodass es aus dem System entfernt wird.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}
+	\item Im Reiter \glqq Musikstücke\grqq wählt der Nutzer die Option \glqq Musikstück entfernen\grqq.
+	\item Der Nutzer sucht das zu entfernende Musikstück gemäß Anwendungsfall \ref{uc musik suchen} heraus.
+	\item Die Daten des Musikstücks werden angezeigt.
+	\item Durch Betätigung des \glqq Löschen\grqq  -Buttons und \glqq Löschen\grqq im anschließend angezeigten Dialog wird das Musikstück und alle dazu gehörigen Notenblätter im System gelöscht.
+	\item Die Software kehrt zum Hauptmenü zurück.
+\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+\begin{enumerate}
+	\item Wird auf die Suchanfrage kein Ergebnis gefunden, so muss erneut gesucht werden.
+	\item Bis zur zweiten Bestätigung des Löschvorgangs kann der Vorgang abgebrochen werden.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Das Musikstück ist gelöscht.
+\subsection{Ergebnis:}
+Alle Daten, Dateien und Ordner, die das zu löschende Musikstück betreffen wurden gelöscht.
+\subsection{Häufigkeit:}
+1 mal in 10 Jahren
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\section{Notenblatt hinzufügen}
+\label{uc noten hinzufuegen}
+\subsection{Zusammenfassung:}
+Zu einem Musikstück wird ein Notenblatt hinzugefügt. Dazu werden Informationen über das Notenblatt und das Notenblatt selber durch die Software im Dateisystem abgelegt.
+\subsection{Akteure:}
+Nutzer, System
+\subsection{Auslöser:}
+Notenblätter sollen zu einem Musikstücks hinzugefügt werden.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}
+	\item Im Reiter \glqq Noten\grqq betätigt der Nutzer den Button \glqq Noten hinzufügen\grqq.
+	\item Es erfolgt eine Suche des Musikstücks gemäß Anwendungsfall \ref{uc musik suchen}.
+	\item Die Daten des gefundenen Musikstücks werden angezeigt.
+	\item Der Nutzer kann durch Angabe zusätzlicher Daten und Pfaden zu PDF Notenblätter dem Musikstück hinzufügen.
+	\item Die Software benennt die Dateien um und sortiert sie ein.
+	\item Die Software kehrt zum Hauptmenü zurück.
+\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+\begin{enumerate}
+	\item Falls mehere Musikstücke ausgewählt werden, wird eine Warnung ausgegeben, dass nur ein Musikstück erlaubt ist, und die Suche beginnt von vorne.
+	\item Aus der Liste kann eine Notenblatt wieder entfernt werden.
+	\item Durch einen Abbruch bleibt das System unverändert.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Notenblätter wurden dem Musikstück hinzugefügt.
+\subsection{Ergebnis:}
+Die Notenblätter sind korrekt benannt im Verzeichnis des Baums abgelegt.
+\subsection{Häufigkeit:}
+Pro Musikstück ca. 40 mal.
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\section{Notenblatt entfernen}
+\label{uc noten entfernen}
+\subsection{Zusammenfassung:}
+Der Nutzer löscht ein oder mehrere Notenblätter eines Musikstücks aus dem System.
+\subsection{Akteure:}
+Nutzer, System
+\subsection{Auslöser:}
+Noten eines Musikstücks sollen entfernt werden.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}
+	\item Im Reiter \glqq Noten\grqq betätigt der Nutzer den Button \glqq Noten entfernen\grqq.
+	\item Es erfolgt eine Suche des Musikstücks gemäß Anwendungsfall \ref{uc musik suchen}.
+	\item Alle vorhandenen Notenblätter zu dem Musikstück werden angezeigt.
+	\item Durch Auswahl kann der Nutzer die zu löschenden Noten auswählen.
+	\item Durch doppelte Bestätigung werden die Noten aus dem System entfernt.
+	\item Die Software kehrt zum Hauptmenü zurück.
+\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+\begin{enumerate}
+	\item Bis zur zweiten Bestätigung kann der Vorgang ohne Veränderungen im Datenbestand beendet werden.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Die Notenblätter wurden entfernt.
+\subsection{Ergebnis:}
+Die gelöschten Notenblätter sind komplett aus dem System entfernt.
+\subsection{Häufigkeit:}
+sehr selten
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\section{Musikstück suchen}
+\label{uc musik suchen}
+\subsection{Zusammenfassung:}
+Der Nutzer gibt in einer Eingabemaske Daten ein. Innerhalb einer Kathegorie muss eines der Eingaben enthalten sein. Verschiedene Kathegorien verden verundet.
+\subsection{Akteure:}
+Nutzer, System
+\subsection{Auslöser:}
+Es müssen ein oder mehrere Musikstücke von der Software aus den Daten herausgesucht werden.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}
+	\item Im Reiter \glqq Musikstücke\grqq oder im Reiter \glqq Noten\grqq wählt der Nutzer die Option \glqq Musikstück suchen\grqq aus.
+ 	\item Es öffnet sich ein Eingabefenster.
+ 	\item Innerhalb einer Kathegorie werden einzelne Begriffe verodert. Wenn in verschiedenen Kathegorien Begriffe durch den Nutzer eingetragen wurden, so muss mindestens ein Wort aus jeder Kathegorie für ein Notenblatt matchen.
+ 	\item Die gefundenen Musikstücke werden in einer Liste, aus der Ausgewählt werden kann angezeigt.
+\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+\begin{enumerate}
+	\item Ist die Suche nicht erfolgreich, können die alten Eingaben durch Hinzufügen oder Verändern der Begriffe verfeinert werden.
+	\item Die Suche, kann bei jedem Teilschritt abgebrochen werden. Die Software kehrt zu dem Teilprogramm zurück, welches die Suche initiiert hat.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Ein oder mehrere Musikstücke wurden gefunden.
+\subsection{Ergebnis:}
+Das System kennt eine Menge von Pfaden zu den Musikstücken, die ausgewählt wurden.
+\subsection{Häufigkeit:}
+10 mal pro Tag
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\section{Musikstück ausgeben}
+\label{uc musik ausgeben}
+\subsection{Zusammenfassung:}
+Durch eine Suche wählt der Nutzer zunächst die Musikstücke aus. Anschließend kann er für jedes Musikstück die Stimmen und Instrumente auswählen. Die zugehörigen Noten werden aus dem Speicherbaum in einen Ausgabeordner kopiert.
+\subsection{Akteure:}
+Nutzer, System
+\subsection{Auslöser:}
+Der Nutzer möchte eine Menge von Notenblättern oder Informationen aus dem System abfragen.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}
+	\item Der Nutzer wählt im Reiter \glqq Noten\grqq die Option \glqq Musikstück ausgeben\grqq
+	\item Im nachfolgenden Dialog können Musikstücke mittels Suche (vgl. Anwendungsfall \ref{uc musik suchen}) zu einer Liste hinzugefügt werden. 
+	\item Für jeden Eintrag dieser Liste kann der Nutzer aus den vorhandenen Trippeln aus Stimmung, Instrument und Stimme gewählt werden.
+	\item Durch Betätigung des \glqq Bereitsellen\grqq-Buttons werden die Dateien in den Ausgabeordern kopiert.
+	\item Das System kehrt zum Hauptmenü zurück. 
+\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+\begin{enumerate}
+	\item Dies kann jederzeit abgebrochen werden.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Es wurden ein oder mehrere Musikstücke aus der Datenbank herausgesucht.
+\subsection{Ergebnis:}
+Im Ausgabeordner befinden sich Kopien der Dateien mit den Notenblätter nach Musikstück geordnet.
+\subsection{Häufigkeit:}
+Zwei mal pro Jahr
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\section{Programm erstellen}
+\label{uc programm erstellen}
+\subsection{Zusammenfassung:}
+Der Nutzer kann einen Ablaufplan erstellen und die Reihenfolge der Stücke festlegen. Die hinterlegten Informationen werden mit ausgegeben.
+\subsection{Akteure:}
+Nutzer, System
+\subsection{Auslöser:}
+Es muss ein Programm erstellt werden.
+\subsection{Vorbedingungen:}
+Die Software wurde gestartet und das Hauptmenü wird angezeigt.
+\subsection{Standardablauf:}
+\begin{enumerate}
+	\item Der Nutzer wählt im Reiter \glqq Programm\grqq die Option \glqq Erstellen\grqq.
+	\item Er spezifiziert Ort, Aufbauzeit, Spielzeit.
+	\item Durch die Suche können Musikstücke hinzugefügt werden.
+	\item Durch Betätigung des \glqq Fertig\grqq Buttons wird ein PDF mit dem Programm und ein PDF mit den Informationen zum Programm erstellt.
+	\item Die Software kehrt zum Hauptmenü zurück.
+\end{enumerate}
+\subsection{Ausnahmen und Varianten:}
+\begin{enumerate}
+	\item Wird die Erstellung zwischendurch abgebrochen, so kehrt die Software zum Hauptmenü zurück.
+\end{enumerate}
+\subsection{Nachbedingungen:}
+Das Programm wurde erstellt.
+\subsection{Ergebnis:}
+Ein Dokument mit dem Programm und ein Dokument mit den Informationen zum Programm wurde erstellt.
+\subsection{Häufigkeit:}
+20 mal pro Jahr
+\subsection{Anmerkungen:}
+keine
+\newpage
+
+\end{document}

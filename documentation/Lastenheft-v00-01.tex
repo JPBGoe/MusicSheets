@@ -1,0 +1,101 @@
+\documentclass[a4paper,10pt]{scrartcl}
+
+% Spracheinstellungen
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+% Glossar und Literatur
+
+
+% Dokumenteigenschaften
+\title{Lastenheft V00-01}
+\author{Jan-Philipp Burchert}
+\date{ }
+
+
+
+\begin{document}
+\maketitle
+
+ 
+\tableofcontents
+\newpage
+
+\section{Zielbestimmung}
+Wenn viele Musikstücke vorhanden sind und Notenblätter ausgegeben oder wieder eingezogen werden, so kann es schwierig werden die Noten in einem organisierten Zustand zu halten. Durch die digitalisierte Speicherung der Noten, können diese jedoch einmal sortiert abgelegt werden. Ein- und Ausgaben können dann digital geschehen, sodass eine Software die Sortierung überwachen kann. Diese Software soll diesem Zweck dienen.
+\section{Produkteinsatz}
+Diese Software soll auf einem Laptop des Vereinsmitglieds eingesetzt werden, welches sich um die Archivierung, Sortierung und Ausgabe der Notenblätter und Musikstücke kümmert.
+\section{Produktfunktionen}
+\begin{enumerate}
+\item[LF10] Hinzufügen, Bearbeiten und Löschen von Musikstücken
+\item[LF20] Hinzufügen, Bearbeiten und Löschen von Notenblättern
+\item[LF30] Erstellen, Speichern, Laden und Löschen eines Auftrittsprogramms
+\item[LF40] Kopieren einer Menge von ausgewählten Musikstücken aus dem Datenbestand in einen Ausgabeordner
+\item[LF50] Suche von Musikstücken und Noten. Dabei soll sowohl eine generelle Suche als auch eine Suche, bei der die einzelnen Kathegorien mit einbezogen werden möglich sein.
+\end{enumerate}
+
+\section{Produktdaten}
+\begin{enumerate}
+	\item[LD10] Zu jedem Musikstück sind folgende Daten zu speichern: Name, Komponist, Arrangeur, Jahr, Verlag.
+	\item[LD20] Zu jedem Musikstück kann der Benutzer weitere Informationen als Text ablegen.
+	\item[LD30] Zu jedem Notenblatt wird der Speicherort, das zu verwendene Instrument sowie dessen Stimmung als auch die Stimme innerhalb des Musikstücks gespeichert.
+	\item[LD40] Jedes Notenblatt gehört zu genau einem Musikstück.
+\end{enumerate}
+
+\section{Produktleistungen}
+\begin{enumerate}
+\item[LL10] Kein Musikstück ist doppel im Sytem.
+\item[LL20] Kein Notenblatt ist innerhalb eines Musikstücks doppelt.
+\item[LL30] Eine Suche sollte nicht länger als 5 Sekunden dauern.
+\item[LL40] Sollte ein Musikstück oder ein Notenblatt aus dem System entfernt werden, so soll dies vollständig geschehen.
+\item[LL50] Das GUI sollte intuitiv verständlich sein.
+\item[LL60] Sowohl unter der Rubrik \glqq Musikstücke\grqq~  als auch \glqq Noten\grqq~ sollte die Suchfunktion ausführbar sein.
+\item[LL70] Die Software sollte möglichst unabhängig vom verwendeten Betriebssystem sein.
+\item[LL80] Die Notenblätter und Musikstücke sollten menschenlesbar einem Dateisystem liegen.
+\end{enumerate}
+\section{Qualitätsanforderungen}
+Die Qualitätsanforderungen an dieses Projekt sind in Tabelle \ref{Tab. Qualitaetsanforderungen} aufgeführt.
+\begin{table}
+\centering
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+Produktqualität &	sehr gut&	gut & normal& irrelevant \\
+\hline
+\hline
+Funktionalität	&			&	x	&		&		\\
+\hline
+Zuverlässigkeit	&			&		&	x	&		\\
+\hline
+Benutzbarkeit	&	x		&		&		&		\\
+\hline
+Effizienz		&			&		&	x	&		\\
+\hline
+Änderbarkeit	&			&		&		&	x	\\
+\hline
+Portierbarkeit	&			&	x	&		&		\\
+\hline
+\end{tabular}
+\caption{Qualitätsanforderungen an das aktuelle Projekt.}
+\label{Tab. Qualitaetsanforderungen}
+\end{table}
+\section{Ergänzungen}
+\begin{center}
+- keine -
+\end{center}
+\section{Glossar}
+\paragraph*{Ausgabe} Diese Software gibt Notenblätter, die durch den Nutzer herausgesucht wurden in einen entsprechend benannten Ausgabeorder aus. Ausgabe wird in desem Dokument stellvertretend für diesen Vorgang verwendet.
+\paragraph*{digitalisierte Speicherung} Ablage von (Noten-) Blätter auf einem Computer. Dazu werden die Blätter in Dateien (z.B. PDF) überführt und innerhalb eines Dateisystems in einem Baum abgelegt.
+\paragraph*{Eingabe} Eingabe bezeichnet in diesem Kontext das Hinzufügen von Musikstücken oder Notenblättern in dieses System.
+\paragraph*{GUI} Graphische Benutzeroberfläche (Graphical User Interface) zur Interaktion des Systems mit dem Benutzer.
+\paragraph*{Musikstück} Musikalisches Werk, welches aus Notenblättern für verschiedene Instrumente besteht  und einem Künstler/ Komponist zuzuordnen ist.
+\paragraph*{Noten} Noten werden in diesem Zusammenhang gleichbedeuten zu Notenblatt verwendet.
+\paragraph*{Notenblatt} Notenblatt ist die Verwaltungsinstanz, die die Noten sowie alle zugehörigen Informationen zu den Notenblättern speichert bzw. verwaltet.
+\paragraph*{Nutzer} Die Person, die diese Software auf einem Rechner verwendet. Hier häufig der Notenwardt oder Dirigent.
+\paragraph*{Software} Gesamtheit aller Dokumente, Quellcodes and Bytecode, welche für die ordnungsgemäße Funktionsweise dieser Anwendung nötig sind.
+\paragraph*{Stimmung} Verschiedene Instrumente gleichen Types können unterschiedliche Stimmungen haben. Eine Stimmung gibt an, wie ein gegriffenes C auf dem Instrument im Vergleich zu einem gegriffenen C auf einem Klavier klingt.
+\paragraph*{Stimme} Die zu spielenden Harmonien und Rythmen eines Musikstücks, welche von einem Instrument gespielt werden sollen, können unter mehreren dieser Instrumente aufgeteilt werden. Jede Aufteilung ist eine Stimme für das Instrument innerhalb des Musikstücks. 
+
+
+
+\end{document}

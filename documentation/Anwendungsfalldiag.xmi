@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Mar 11 13:46:57 CET 2018'>
+  <XMI.header>    <XMI.documentation>
+      <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
+      <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B84'
+      name = 'unbenanntesModell' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'>
+      <UML:Namespace.ownedElement>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B85'
+          name = 'Musikstück hinzufügen' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'>
+          <UML:UseCase.extend>
+            <UML:Extend xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8F'/>
+            <UML:Extend xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B97'/>
+          </UML:UseCase.extend>
+        </UML:UseCase>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B86'
+          name = 'Musikstück bearbeiten' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'>
+          <UML:UseCase.include>
+            <UML:Include xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B90'/>
+          </UML:UseCase.include>
+          <UML:UseCase.extensionPoint>
+            <UML:ExtensionPoint xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8E'
+              name = 'Ext Point' isSpecification = 'false' location = 'nicht vorhanden'/>
+          </UML:UseCase.extensionPoint>
+        </UML:UseCase>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B87'
+          name = 'Musikstück entfernen' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'>
+          <UML:UseCase.include>
+            <UML:Include xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B91'/>
+          </UML:UseCase.include>
+        </UML:UseCase>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B88'
+          name = 'Notenblatt hinzufügen' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'>
+          <UML:UseCase.extensionPoint>
+            <UML:ExtensionPoint xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B96'
+              name = 'Ext Point' isSpecification = 'false' location = 'nicht vorhanden'/>
+          </UML:UseCase.extensionPoint>
+        </UML:UseCase>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B89'
+          name = 'Notenblatt bearbeiten' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'>
+          <UML:UseCase.include>
+            <UML:Include xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B94'/>
+          </UML:UseCase.include>
+        </UML:UseCase>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8A'
+          name = 'Musikstück suchen' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8B'
+          name = 'Musikstück ausgeben' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'>
+          <UML:UseCase.include>
+            <UML:Include xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B95'/>
+          </UML:UseCase.include>
+        </UML:UseCase>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8C'
+          name = 'Repertoire für Instrument ausgeben' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'>
+          <UML:UseCase.include>
+            <UML:Include xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B93'/>
+          </UML:UseCase.include>
+        </UML:UseCase>
+        <UML:UseCase xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8D'
+          name = 'Programm erstellen' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'>
+          <UML:UseCase.include>
+            <UML:Include xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B92'/>
+          </UML:UseCase.include>
+        </UML:UseCase>
+        <UML:Extend xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8F'
+          isSpecification = 'false'>
+          <UML:Extend.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B86'/>
+          </UML:Extend.base>
+          <UML:Extend.extension>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B85'/>
+          </UML:Extend.extension>
+          <UML:Extend.extensionPoint>
+            <UML:ExtensionPoint xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8E'/>
+          </UML:Extend.extensionPoint>
+        </UML:Extend>
+        <UML:Include xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B90'
+          isSpecification = 'false'>
+          <UML:Include.addition>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8A'/>
+          </UML:Include.addition>
+          <UML:Include.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B86'/>
+          </UML:Include.base>
+        </UML:Include>
+        <UML:Include xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B91'
+          isSpecification = 'false'>
+          <UML:Include.addition>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8A'/>
+          </UML:Include.addition>
+          <UML:Include.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B87'/>
+          </UML:Include.base>
+        </UML:Include>
+        <UML:Include xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B92'
+          isSpecification = 'false'>
+          <UML:Include.addition>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8A'/>
+          </UML:Include.addition>
+          <UML:Include.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8D'/>
+          </UML:Include.base>
+        </UML:Include>
+        <UML:Include xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B93'
+          isSpecification = 'false'>
+          <UML:Include.addition>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8A'/>
+          </UML:Include.addition>
+          <UML:Include.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8C'/>
+          </UML:Include.base>
+        </UML:Include>
+        <UML:Include xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B94'
+          isSpecification = 'false'>
+          <UML:Include.addition>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8A'/>
+          </UML:Include.addition>
+          <UML:Include.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B89'/>
+          </UML:Include.base>
+        </UML:Include>
+        <UML:Include xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B95'
+          isSpecification = 'false'>
+          <UML:Include.addition>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8A'/>
+          </UML:Include.addition>
+          <UML:Include.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B8B'/>
+          </UML:Include.base>
+        </UML:Include>
+        <UML:Extend xmi.id = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B97'
+          isSpecification = 'false'>
+          <UML:Extend.base>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B88'/>
+          </UML:Extend.base>
+          <UML:Extend.extension>
+            <UML:UseCase xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B85'/>
+          </UML:Extend.extension>
+          <UML:Extend.extensionPoint>
+            <UML:ExtensionPoint xmi.idref = '127-0-1-1-6f8a871c:16215111231:-8000:0000000000000B96'/>
+          </UML:Extend.extensionPoint>
+        </UML:Extend>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </XMI.content>
+</XMI>
